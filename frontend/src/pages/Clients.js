@@ -221,10 +221,7 @@ const Clients = () => {
       />
 
       <Dialog open={showForm} onOpenChange={setShowForm}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-          <DialogHeader>
-            <DialogTitle>{editingClient ? 'Edit Client' : 'Add New Client'}</DialogTitle>
-          </DialogHeader>
+        <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto p-0">
           <ClientForm client={editingClient} onClose={handleFormClose} />
         </DialogContent>
       </Dialog>
